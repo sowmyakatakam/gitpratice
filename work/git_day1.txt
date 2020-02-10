@@ -458,4 +458,163 @@ G:\myproject\login (master)
 G:\myproject\login (master)
 ?
 G:\myproject\login (master)
-(i-search)`':
+?
+G:\myproject\login (master)
+? git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../work/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+G:\myproject\login (master)
+?
+
+
+G:\myproject (master)
+? git status
+On branch master
+nothing to commit, working tree clean
+
+G:\myproject (master)
+? git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        work/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+G:\myproject (master)
+? git add -A
+
+G:\myproject (master)
+? git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   work/git_day1.txt
+
+
+G:\myproject (master)
+? git commit -m "#5 work"
+[master 9bb8aee] #5 work
+ 1 file changed, 461 insertions(+)
+ create mode 100644 work/git_day1.txt
+
+G:\myproject (master)
+? git status
+On branch master
+nothing to commit, working tree clean
+
+G:\myproject (master)
+? git restore --help
+
+G:\myproject (master)
+? git --version
+git version 2.25.0.windows.1
+
+G:\myproject (master)
+? git history
+git: 'history' is not a git command. See 'git --help'.
+
+G:\myproject (master)
+? history
+     1  .\cmder.exe /REGISTER ALL
+     2  echo hello world
+     3  date
+     4  whoami
+     5  pwd
+     6  where i am
+     7  where am i
+     8  whereami
+     9  cd C:\Users\hp\Documents\anotherfolder
+    10  cd C: \Users\hp\Documents\gitpratice
+    11  cd C:\Users\hp\Documents\gitpratice
+    12  mkdir games
+    13  cd .
+    14  cd ~
+    15  ls C:\Users\hp\Documents\gitpratice
+    16  ls C:\Users\hp\Documents
+    17  cd games
+    18  ls -la
+    19  touch newfile
+    20  ls anotherfolder
+    21  ls
+    22  cd -l
+    23  -l
+    24  cd -
+    25  cd gitpraticce
+    26  cd gitpratice
+    27  ls file
+    28  file
+    29  cd anodherfolder
+    30  cd anotherfolder
+    31  ls -l
+    32  cd newfile
+    33  file newfile
+    34  touch newfile2
+    35  cat newfile newfile2
+    36  cat newfile2 newfile3
+    37  less C:\Users\hp\Documents\anotherfolder
+    38  ls q
+    39  q
+    40  less q
+    41  cp newfile newfile2
+    42  less C:\Users\hp\Documents\anotherfolder\newfile
+    43  paste -s newfile.txt
+    44  paste -s newfile
+    45  paste '+' -s newfile
+    46  paste '  ' -s newfile
+    47  man ls
+    48  git config --global user.name "sowmya katakam"
+    49  git config --global user.email sowmya.katakam111@gmail.com
+    50  git init
+    51  ls -a
+    52  cd .git/
+    53  mkdir home
+    54  touch html
+    55  touch css
+    56  touch js
+    57  mkdir about
+    58  touch abouthtml
+    59  touch aboutcss
+    60  touch aboutjs
+    61  cd home
+    62  git add html
+    63  cd
+    64  cd about
+    65  git commit -m "#1 first commit."
+    66  git restore abouthtml
+    67  git add
+    68  git restore --staged abouthtml
+    69  git add -a
+    70  git commit -m "#2 second commit."
+    71  cd ..
+    72  mkdir login
+    73  cd login
+    74  touch loginhtml
+    75  touch logincss
+    76  touch loginjs
+    77  status
+    78  git commit -m "#3 created login folder."
+    79  git commit -m "#4 modified loginhtml."
+    80  git log --online
+    81  git log --oneline
+    82  git add --help
+    83  git config --get remote.origin.url
+    84  git log
+    85  git config --global user.name "sowmya_katakam"
+    86  git config --global user.name
+    87  git show 075e29e
+    88  git config --global --list
+    89  git config --global color.ui auto
+    90  git add -A
+    91  git commit -m "#5 work"
+    92  git status
+    93  git restore --help
+    94  git --version
+    95  git history
+    96  history
+
