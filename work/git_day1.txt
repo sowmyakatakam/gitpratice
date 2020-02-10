@@ -1,0 +1,461 @@
+
+G:\myproject
+? git init
+Initialized empty Git repository in G:/myproject/.git/
+
+G:\myproject (master)
+? ls -a
+./  ../  .git/
+
+G:\myproject (master)
+? cd .git/
+
+G:\myproject\.git (master)
+? cd ..
+
+G:\myproject (master)
+? touch html
+
+G:\myproject (master)
+? touch css
+
+G:\myproject (master)
+? touch js
+
+G:\myproject (master)
+? mkdir home
+
+G:\myproject (master)
+? cd home
+
+G:\myproject\home (master)
+? touch html
+
+G:\myproject\home (master)
+? touch css
+
+G:\myproject\home (master)
+? touch js
+
+G:\myproject\home (master)
+? cd ..
+
+G:\myproject (master)
+? mkdir about
+
+G:\myproject (master)
+? cd about
+
+G:\myproject\about (master)
+? touch abouthtml
+
+G:\myproject\about (master)
+? touch aboutcss
+
+G:\myproject\about (master)
+? touch aboutjs
+
+G:\myproject\about (master)
+? cd ..
+
+G:\myproject (master)
+? git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about/
+        home/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+G:\myproject (master)
+? cd home
+
+G:\myproject\home (master)
+? git add html
+
+G:\myproject\home (master)
+? git add -A
+
+G:\myproject\home (master)
+? cd
+G:\myproject\home
+
+G:\myproject\home (master)
+? cd ..
+
+G:\myproject (master)
+? cd about
+
+G:\myproject\about (master)
+? git add -A
+
+G:\myproject\about (master)
+? git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   aboutcss
+        new file:   abouthtml
+        new file:   aboutjs
+        new file:   ../home/css
+        new file:   ../home/html
+        new file:   ../home/js
+
+
+G:\myproject\about (master)
+? git commit -m "#1 first commit."
+[master (root-commit) 6e7241e] #1 first commit.
+ 6 files changed, 6 insertions(+)
+ create mode 100644 about/aboutcss
+ create mode 100644 about/abouthtml
+ create mode 100644 about/aboutjs
+ create mode 100644 home/css
+ create mode 100644 home/html
+ create mode 100644 home/js
+
+G:\myproject\about (master)
+? git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   abouthtml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G:\myproject\about (master)
+? git restore abouthtml
+
+G:\myproject\about (master)
+? git status
+On branch master
+nothing to commit, working tree clean
+
+G:\myproject\about (master)
+? git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   abouthtml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G:\myproject\about (master)
+? git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+G:\myproject\about (master)
+? git add -A
+
+G:\myproject\about (master)
+? git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   abouthtml
+
+
+G:\myproject\about (master)
+? git restore --staged abouthtml
+
+G:\myproject\about (master)
+? git restore --staged abouthtml
+
+G:\myproject\about (master)
+? git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   abouthtml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G:\myproject\about (master)
+? git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+G:\myproject\about (master)
+? git add -A
+
+G:\myproject\about (master)
+? git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   abouthtml
+
+
+G:\myproject\about (master)
+? git commit -m "#2 second commit."
+[master 075e29e] #2 second commit.
+ 1 file changed, 4 insertions(+)
+
+G:\myproject\about (master)
+? cd ..
+
+G:\myproject (master)
+? mkdir login
+
+G:\myproject (master)
+? cd login
+
+G:\myproject\login (master)
+? touch loginhtml
+
+G:\myproject\login (master)
+? touch logincss
+
+G:\myproject\login (master)
+? touch loginjs
+
+G:\myproject\login (master)
+? git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+G:\myproject\login (master)
+? git add -A
+
+G:\myproject\login (master)
+? status
+'status' is not recognized as an internal or external command,
+operable program or batch file.
+
+G:\myproject\login (master)
+? git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   logincss
+        new file:   loginhtml
+        new file:   loginjs
+
+
+G:\myproject\login (master)
+? git commit -m "#3 created login folder."
+[master 4ef16d0] #3 created login folder.
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 login/logincss
+ create mode 100644 login/loginhtml
+ create mode 100644 login/loginjs
+
+G:\myproject\login (master)
+? git status
+On branch master
+nothing to commit, working tree clean
+
+G:\myproject\login (master)
+? git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   loginhtml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G:\myproject\login (master)
+? git add -A
+
+G:\myproject\login (master)
+? git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   loginhtml
+
+
+G:\myproject\login (master)
+? git commit -m "#4 modified loginhtml."
+[master 7cc5a3b] #4 modified loginhtml.
+ 1 file changed, 3 insertions(+)
+
+G:\myproject\login (master)
+? git status
+On branch master
+nothing to commit, working tree clean
+
+G:\myproject\login (master)
+? git log --online
+fatal: unrecognized argument: --online
+
+G:\myproject\login (master)
+? git log --oneline
+7cc5a3b (HEAD -> master) #4 modified loginhtml.
+4ef16d0 #3 created login folder.
+075e29e #2 second commit.
+6e7241e #1 first commit.
+
+G:\myproject\login (master)
+? git log
+commit 7cc5a3b8915587dd05a64e48a127a3c533bd07b1 (HEAD -> master)
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:38:15 2020 +0530
+
+    #4 modified loginhtml.
+
+commit 4ef16d0d204815e922d8c81c7b1a73392da766de
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:36:01 2020 +0530
+
+    #3 created login folder.
+
+commit 075e29e5bba863bc0d4a83c5b479c22ee4bf9b23
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:31:59 2020 +0530
+
+    #2 second commit.
+
+commit 6e7241e5b84b7a3523f14b0f5895a7dc87ad3b75
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:16:33 2020 +0530
+
+    #1 first commit.
+
+G:\myproject\login (master)
+? git show 075e29e
+commit 075e29e5bba863bc0d4a83c5b479c22ee4bf9b23
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:31:59 2020 +0530
+
+    #2 second commit.
+
+diff --git a/about/abouthtml b/about/abouthtml
+index 8c9da9f..74212e3 100644
+--- a/about/abouthtml
++++ b/about/abouthtml
+@@ -1 +1,5 @@
+ this is abouthtml file
++//now second commit will happen. for that
++//git add abouthtml
++//git commit "#2 second commit."
++//second commit completed
+\ No newline at end of file
+
+G:\myproject\login (master)
+? git add --help
+
+G:\myproject\login (master)
+? git config --get remote.origin.url
+
+G:\myproject\login (master)
+? git show 075e29e
+commit 075e29e5bba863bc0d4a83c5b479c22ee4bf9b23
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:31:59 2020 +0530
+
+    #2 second commit.
+
+diff --git a/about/abouthtml b/about/abouthtml
+index 8c9da9f..74212e3 100644
+--- a/about/abouthtml
++++ b/about/abouthtml
+@@ -1 +1,5 @@
+ this is abouthtml file
++//now second commit will happen. for that
++//git add abouthtml
++//git commit "#2 second commit."
++//second commit completed
+\ No newline at end of file
+
+G:\myproject\login (master)
+? git log
+commit 7cc5a3b8915587dd05a64e48a127a3c533bd07b1 (HEAD -> master)
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:38:15 2020 +0530
+
+    #4 modified loginhtml.
+
+commit 4ef16d0d204815e922d8c81c7b1a73392da766de
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:36:01 2020 +0530
+
+    #3 created login folder.
+
+commit 075e29e5bba863bc0d4a83c5b479c22ee4bf9b23
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:31:59 2020 +0530
+
+    #2 second commit.
+
+commit 6e7241e5b84b7a3523f14b0f5895a7dc87ad3b75
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:16:33 2020 +0530
+
+    #1 first commit.
+
+G:\myproject\login (master)
+? git config --global user.name "sowmya_katakam"
+
+G:\myproject\login (master)
+? git config --global user.name
+sowmya_katakam
+
+G:\myproject\login (master)
+? git show 075e29e
+commit 075e29e5bba863bc0d4a83c5b479c22ee4bf9b23
+Author: sowmya katakam <sowmya.katakam111@gmail.com>
+Date:   Mon Feb 10 23:31:59 2020 +0530
+
+    #2 second commit.
+
+diff --git a/about/abouthtml b/about/abouthtml
+index 8c9da9f..74212e3 100644
+--- a/about/abouthtml
++++ b/about/abouthtml
+@@ -1 +1,5 @@
+ this is abouthtml file
++//now second commit will happen. for that
++//git add abouthtml
++//git commit "#2 second commit."
++//second commit completed
+\ No newline at end of file
+
+G:\myproject\login (master)
+? git config --global --list
+user.name=sowmya_katakam
+user.email=sowmya.katakam111@gmail.com
+
+G:\myproject\login (master)
+? git config --global color.ui auto
+
+G:\myproject\login (master)
+?
+G:\myproject\login (master)
+(i-search)`':
